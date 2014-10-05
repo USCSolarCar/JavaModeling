@@ -40,6 +40,7 @@ public class mainWindow extends javax.swing.JFrame {
         yearSpinner = new javax.swing.JSpinner();
         UTCLabel = new javax.swing.JLabel();
         UTCSpinner = new javax.swing.JSpinner();
+        jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -107,6 +108,8 @@ public class mainWindow extends javax.swing.JFrame {
                 .addContainerGap(191, Short.MAX_VALUE))
         );
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\datasource1337\\Workspace\\JavaModeling\\imgs\\Logo.JPG")); // NOI18N
+
         javax.swing.GroupLayout jPanelSolarLayout = new javax.swing.GroupLayout(jPanelSolar);
         jPanelSolar.setLayout(jPanelSolarLayout);
         jPanelSolarLayout.setHorizontalGroup(
@@ -114,14 +117,21 @@ public class mainWindow extends javax.swing.JFrame {
             .addGroup(jPanelSolarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(483, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(101, 101, 101))
         );
         jPanelSolarLayout.setVerticalGroup(
             jPanelSolarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelSolarLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addGroup(jPanelSolarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelSolarLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanelSolarLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel1)))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Solar Power", jPanelSolar);
@@ -130,11 +140,11 @@ public class mainWindow extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 795, Short.MAX_VALUE)
+            .addGap(0, 980, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 472, Short.MAX_VALUE)
+            .addGap(0, 638, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Aerodynamics", jPanel2);
@@ -196,6 +206,7 @@ public class mainWindow extends javax.swing.JFrame {
     private javax.swing.JSpinner UTCSpinner;
     private javax.swing.JLabel dayLabel;
     private javax.swing.JSpinner daySpinner;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanelSolar;
